@@ -200,36 +200,36 @@ hi VimwikiList guifg=#907aa9 guibg=NONE gui=NONE cterm=NONE
 hi VimwikiNoExistsLink guifg=#b4637a guibg=NONE gui=NONE cterm=NONE
 
 if s:t_Co >= 256
-  if get(g:,'disable_bg',0)
-    hi Normal ctermfg=60 ctermbg=NONE cterm=NONE
-    hi NormalNC ctermfg=60 ctermbg=NONE cterm=NONE
-    hi SignColumn ctermfg=60 ctermbg=NONE cterm=NONE
-    hi StatusLineNC ctermfg=103 ctermbg=NONE cterm=NONE
-  else
-    hi Normal ctermfg=60 ctermbg=255 cterm=NONE
-    hi NormalNC ctermfg=60 ctermbg=255 cterm=NONE
-    hi SignColumn ctermfg=60 ctermbg=255 cterm=NONE
-    hi StatusLineNC ctermfg=103 ctermbg=255 cterm=NONE
-  endif
-  if get(g:,'disable_float_bg',0)
-    hi DarkenedPanel ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi DarkenedStatusline ctermfg=NONE ctermbg=NONE cterm=NONE
-    hi Folded ctermfg=60 ctermbg=NONE cterm=NONE
-    hi NormalFloat ctermfg=60 ctermbg=NONE cterm=NONE
-    hi Pmenu ctermfg=103 ctermbg=NONE cterm=NONE
-    hi StatusLine ctermfg=103 ctermbg=NONE cterm=NONE
-    hi TabLine ctermfg=103 ctermbg=NONE cterm=NONE
-    hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=NONE
-  else
-    hi DarkenedPanel ctermfg=NONE ctermbg=231 cterm=NONE
-    hi DarkenedStatusline ctermfg=NONE ctermbg=231 cterm=NONE
-    hi Folded ctermfg=60 ctermbg=231 cterm=NONE
-    hi NormalFloat ctermfg=60 ctermbg=231 cterm=NONE
-    hi Pmenu ctermfg=103 ctermbg=231 cterm=NONE
-    hi StatusLine ctermfg=103 ctermbg=231 cterm=NONE
-    hi TabLine ctermfg=103 ctermbg=231 cterm=NONE
-    hi TabLineFill ctermfg=NONE ctermbg=231 cterm=NONE
-  endif
+  " if get(g:,'disable_bg',0)
+  "   hi Normal ctermfg=60 ctermbg=NONE cterm=NONE
+  "   hi NormalNC ctermfg=60 ctermbg=NONE cterm=NONE
+  "   hi SignColumn ctermfg=60 ctermbg=NONE cterm=NONE
+  "   hi StatusLineNC ctermfg=103 ctermbg=NONE cterm=NONE
+  " else
+  "   hi Normal ctermfg=60 ctermbg=255 cterm=NONE
+  "   hi NormalNC ctermfg=60 ctermbg=255 cterm=NONE
+  "   hi SignColumn ctermfg=60 ctermbg=255 cterm=NONE
+  "   hi StatusLineNC ctermfg=103 ctermbg=255 cterm=NONE
+  " endif
+  " if get(g:,'disable_float_bg',0)
+  "   hi DarkenedPanel ctermfg=NONE ctermbg=NONE cterm=NONE
+  "   hi DarkenedStatusline ctermfg=NONE ctermbg=NONE cterm=NONE
+  "   hi Folded ctermfg=60 ctermbg=NONE cterm=NONE
+  "   hi NormalFloat ctermfg=60 ctermbg=NONE cterm=NONE
+  "   hi Pmenu ctermfg=103 ctermbg=NONE cterm=NONE
+  "   hi StatusLine ctermfg=103 ctermbg=NONE cterm=NONE
+  "   hi TabLine ctermfg=103 ctermbg=NONE cterm=NONE
+  "   hi TabLineFill ctermfg=NONE ctermbg=NONE cterm=NONE
+  " else
+  "   hi DarkenedPanel ctermfg=NONE ctermbg=231 cterm=NONE
+  "   hi DarkenedStatusline ctermfg=NONE ctermbg=231 cterm=NONE
+  "   hi Folded ctermfg=60 ctermbg=231 cterm=NONE
+  "   hi NormalFloat ctermfg=60 ctermbg=231 cterm=NONE
+  "   hi Pmenu ctermfg=103 ctermbg=231 cterm=NONE
+  "   hi StatusLine ctermfg=103 ctermbg=231 cterm=NONE
+  "   hi TabLine ctermfg=103 ctermbg=231 cterm=NONE
+  "   hi TabLineFill ctermfg=NONE ctermbg=231 cterm=NONE
+  " endif
   if !s:italics 
     hi Comment ctermfg=103 ctermbg=NONE cterm=NONE
   else
